@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+:root {
+  --index: calc(1vw + 1vh);
+  --gutter: 30px;
+  --side-small: 26;
+  --side-big: 36;
+  --depth: 4000px;
+  --transition: 0.75s cubic-bezier(0.075, 0.5, 0, 1);
+}
+
+@font-face {
+  font-family: raleway_c;
+  src: url(../fonts/raleway-v22-cyrillic-300.woff2);
+  font-weight: 300;
+}
+@font-face {
+  font-family: raleway_c;
+  src: url(../fonts/raleway-v22-cyrillic-100.woff2);
+  font-weight: 100;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-size: calc(var(--index) * 0.8);
+  font-family: raleway_c, sans-serif;
+  line-height: 1.75;
+  height: var(--depth);
+  font-weight: 300;
+}
+
+.soundbutton {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+  cursor: pointer;
+  width: 24px;
+  transition: 0.25s ease;
+}
+.soundbutton.paused {
+  opacity: 0.25;
+}
+
+/* .frame.frame_bg {
+  background-color: #fff;
+  display: inline-flex;
+  text-align: center;
+  margin-right: 90px;
+  height: 50px;
+} */
+
+/* .ptk {
+  display: flex;
+  text-align: center;
+  margin-left: 300px;
+  margin-top: 150px;
+} */
+
+.ttpt {
+  display: inline-block;
+  margin-right: 5%; /* Расстояние между картинками */
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.center {
+  text-align: center;
+}
+
+.textbot {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.texttop {
+  text-align: center;
+  margin-top: 5%;
+}
